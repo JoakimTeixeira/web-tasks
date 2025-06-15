@@ -1,11 +1,11 @@
 // @ts-check
-const eslint = require('@eslint/js');
-const tseslint = require('typescript-eslint');
-const angular = require('angular-eslint');
-const eslintPluginPrettier = require('eslint-plugin-prettier');
-const eslintConfigPrettier = require('eslint-config-prettier');
+import eslint from '@eslint/js';
+import angular from 'angular-eslint';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import eslintPluginPrettier from 'eslint-plugin-prettier';
+import tseslint from 'typescript-eslint';
 
-module.exports = tseslint.config(
+export default tseslint.config(
   {
     files: ['**/*.ts'],
     extends: [
@@ -15,6 +15,10 @@ module.exports = tseslint.config(
       ...angular.configs.tsRecommended,
       eslintConfigPrettier,
     ],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+    },
     processor: angular.processInlineTemplates,
     plugins: {
       prettier: eslintPluginPrettier,
