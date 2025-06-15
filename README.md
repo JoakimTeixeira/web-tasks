@@ -2,6 +2,13 @@
 
 Simple task list
 
+## To-do
+
+- [ ] Add absolute imports
+- [ ] Implement typography and image responsiveness
+- [ ] Create `@media` query pattern for reusability
+- [ ] Integrate `@font-faces`
+
 ## Running the Project
 
 To get started, fork the repository, clone it, and then run the following commands:
@@ -20,9 +27,3 @@ To generate a new component, run:
 To run unit tests, run:
 
     npm test
-
-## Building
-
-To build the project run:
-
-    npm run build
