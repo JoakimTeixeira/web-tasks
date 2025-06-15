@@ -9,17 +9,23 @@
     "test": "ng test",
     "format": "prettier --check .",
     "format:fix": "prettier --log-level=warn --write .",
-    "lint": "ng lint",
+    "lint": "ng lint && htmlhint src",
     "lint:fix": "ng lint --fix --max-warnings=0",
-    "prepare": "husky"
+    "prepare": "husky",
+    "htmlhint": "htmlhint --init"
   },
   "lint-staged": {
     "*.{json,md,yml,css,scss}": [
       "prettier --write"
     ],
-    "*.{js,ts,html}": [
+    "*.{js,ts}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint --fix --max-warnings=0"
+    ],
+    "*.html": [
+      "prettier --write",
+      "eslint --fix --max-warnings=0",
+      "htmlhint"
     ]
   },
   "private": true,
@@ -43,6 +49,7 @@
     "eslint": "^9.28.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.1",
+    "htmlhint": "^1.5.1",
     "husky": "^9.1.7",
     "jasmine-core": "~5.7.0",
     "karma": "~6.4.0",
