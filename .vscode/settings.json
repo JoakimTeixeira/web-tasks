@@ -1,0 +1,10 @@
+{
+  // Formatting
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
+  // Emmet Autocomplete
+  "html-css-class-completion.enableEmmetSupport": true
+}
