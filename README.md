@@ -20,7 +20,7 @@ To get started, fork the repository, clone it, and then run the following comman
 
 To generate a new component, run:
 
-    ng generate component component-name
+    ng generate component component-name --standalone --type component
 
 ## Testing
 
