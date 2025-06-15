@@ -4,7 +4,11 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // https://code.visualstudio.com/docs/configure/settings#_multiple-languagespecific-editor-settings
+  "[html][jsonc][javascript][typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // Emmet Autocomplete
   "html-css-class-completion.enableEmmetSupport": true
 }
