@@ -6,9 +6,19 @@
   "editor.formatOnPaste": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   // https://code.visualstudio.com/docs/configure/settings#_multiple-languagespecific-editor-settings
-  "[html][jsonc][javascript][typescript]": {
+  "[jsonc][html][javascript][typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
+  // Fixes on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.removeUnusedImports": "explicit",
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
   // Emmet Autocomplete
   "html-css-class-completion.enableEmmetSupport": true
 }
