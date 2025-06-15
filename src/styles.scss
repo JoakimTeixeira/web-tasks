@@ -31,9 +31,18 @@ body {
   // Makes sure page takes up the full viewport
   min-height: 100vh;
   // Default font and fallbacks
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
   // Improves font rendering and visibility
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
