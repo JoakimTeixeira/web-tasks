@@ -2,6 +2,10 @@
 
 Simple task list
 
+[![Code Linter](https://img.shields.io/badge/ESLint-6358D4?style=flat&logo=eslint&label=Code%20Linter)](https://github.com/eslint/eslint)
+[![HTML Linter](https://img.shields.io/badge/HTMLHint-EF503F?style=flat&logo=html5&label=HTML%20Linter)](https://github.com/htmlhint/HTMLHint)
+[![Formatter](https://img.shields.io/badge/Prettier-BF85BF?style=flat&logo=prettier&label=Formatter)](https://github.com/prettier/prettier)
+
 ## To-do
 
 - [ ] Add absolute imports
