@@ -53,6 +53,14 @@ export default tseslint.config(
           allow: ['warn', 'error'],
         },
       ],
+      '@typescript-eslint/explicit-member-accessibility': [
+        'error',
+        {
+          overrides: {
+            properties: 'no-public',
+          },
+        },
+      ],
     },
   },
   {
