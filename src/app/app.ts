@@ -5,7 +5,6 @@ import { UserComponent } from './user/user.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
-  standalone: true,
   imports: [HeaderComponent, UserComponent],
   styleUrl: './app.scss',
 })
