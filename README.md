@@ -12,6 +12,7 @@ Simple task list
 - [ ] Implement typography and image responsiveness
 - [ ] Create `@media` query pattern for reusability
 - [ ] Integrate `@font-faces`
+- [ ] Configure Stylelint
 
 ## Running the Project
 
